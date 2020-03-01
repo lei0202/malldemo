@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/mall.iml" filepath="$PROJECT_DIR$/.idea/mall.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-api/mall-api.iml" filepath="$PROJECT_DIR$/mall-api/mall-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-common-util/mall-common-util.iml" filepath="$PROJECT_DIR$/mall-common-util/mall-common-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-parent.iml" filepath="$PROJECT_DIR$/mall-parent/mall-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-service-util/mall-service-util.iml" filepath="$PROJECT_DIR$/mall-service-util/mall-service-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-user/mall-user.iml" filepath="$PROJECT_DIR$/mall-user/mall-user.iml" />
     </modules>
   </component>
