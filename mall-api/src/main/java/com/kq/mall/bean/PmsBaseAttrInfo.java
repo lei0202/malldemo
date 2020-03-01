@@ -1,6 +1,6 @@
 package com.kq.mall.bean;
 
-import com.atguigu.gmall.bean.BaseAttrValue;
+import com.kq.mall.bean.PmsBaseAttrValue;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -23,7 +23,7 @@ public class PmsBaseAttrInfo implements Serializable {
     @Column
     private String isEnabled;
     @Transient
-    List<BaseAttrValue> attrValueList;
+    List<PmsBaseAttrValue> attrValueList;
 
     public String getId() {
         return id;
@@ -57,11 +57,11 @@ public class PmsBaseAttrInfo implements Serializable {
         this.isEnabled = isEnabled;
     }
 
-    public List<BaseAttrValue> getAttrValueList() {
+    public List<PmsBaseAttrValue> getAttrValueList() {
         return attrValueList;
     }
 
-    public void setAttrValueList(List<BaseAttrValue> attrValueList) {
+    public void setAttrValueList(List<PmsBaseAttrValue> attrValueList) {
         this.attrValueList = attrValueList;
     }
 }

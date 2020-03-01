@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.21.RELEASE</version>
+        <version>2.2.4.RELEASE</version>
     </parent>
     <groupId>com.kq.mall</groupId>
     <artifactId>mall-parent</artifactId>
@@ -18,6 +18,9 @@
         <module>../mall-api</module>
         <module>../mall-common-util</module>
         <module>../mall-service-util</module>
+        <module>../mall-web-util</module>
+        <module>../mall-user-service</module>
+        <module>../mall-user-web</module>
     </modules>
 
     <properties>
@@ -25,15 +28,15 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <fastjson.version>1.2.46</fastjson.version>
-        <dubbo-starter.version>1.0.10</dubbo-starter.version>
-        <dubbo.version>2.6.0</dubbo.version>
+        <dubbo-starter.version>1.1.3</dubbo-starter.version>
+        <dubbo.version>2.6.6</dubbo.version>
         <zkclient.version>0.10</zkclient.version>
         <mybatis.version>1.3.1</mybatis.version>
         <nekohtml.version>1.9.20</nekohtml.version>
         <xml-apis.version>1.4.01</xml-apis.version>
         <batik-ext.version>1.9.1</batik-ext.version>
         <jsoup.version>1.11.2</jsoup.version>
-        <httpclient.version>4.5.5</httpclient.version>
+        <httpclient.version>4.5.6</httpclient.version>
         <commons-lang3.version>3.7</commons-lang3.version>
         <mapper-starter.version>1.2.3</mapper-starter.version>
         <jedis.version>2.9.0</jedis.version>
@@ -42,7 +45,7 @@
         <beanUtils.version>1.9.3</beanUtils.version>
     </properties>
 
-    <dependencyManagement>
+<dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -54,6 +57,22 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>${dubbo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>4.1.32.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-framework</artifactId>
+                <version>2.8.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-recipes</artifactId>
+                <version>2.8.0</version>
             </dependency>
 
             <dependency>
@@ -145,9 +164,7 @@
                 <artifactId>commons-beanutils</artifactId>
                 <version>${beanUtils.version}</version>
             </dependency>
-
-
         </dependencies>
-    </dependencyManagement>
+</dependencyManagement>
 
 </project>

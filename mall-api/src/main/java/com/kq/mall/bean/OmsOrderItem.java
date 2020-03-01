@@ -3,6 +3,9 @@ package com.kq.mall.bean;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+/**
+ * @author lilei
+ */
 public class OmsOrderItem implements Serializable {
 
     private String id;

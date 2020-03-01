@@ -1,9 +1,5 @@
 package com.kq.mall.bean;
 
-import com.atguigu.gmall.bean.SkuAttrValue;
-import com.atguigu.gmall.bean.SkuImage;
-import com.atguigu.gmall.bean.SkuSaleAttrValue;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;

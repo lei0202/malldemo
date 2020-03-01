@@ -1,6 +1,6 @@
 package com.kq.mall.bean;
 
-import com.atguigu.gmall.bean.BaseCatalog2;
+import com.kq.mall.bean.PmsBaseCatalog2;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -19,7 +19,15 @@ public class PmsBaseCatalog1 implements Serializable {
     private String name;
 
     @Transient
-    private List<BaseCatalog2> catalog2s;
+    private List<PmsBaseCatalog2> catalog2s;
+
+    public List<PmsBaseCatalog2> getCatalog2s() {
+        return catalog2s;
+    }
+
+    public void setCatalog2s(List<PmsBaseCatalog2> catalog2s) {
+        this.catalog2s = catalog2s;
+    }
 
     public String getId() {
         return id;
