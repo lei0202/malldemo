@@ -21,6 +21,8 @@
         <module>../mall-web-util</module>
         <module>../mall-user-service</module>
         <module>../mall-user-web</module>
+        <module>../mall-manage-web</module>
+        <module>../mall-manage-service</module>
     </modules>
 
     <properties>

@@ -5,8 +5,8 @@ import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
- * @param
- * @return
+ * @author lilei
+
  */
 public class PmsSkuSaleAttrValue implements Serializable {
 

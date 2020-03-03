@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kq.mall.manage.mapper.PmsBaseAttrValueMapper">
+    <insert id="save" parameterType="com.kq.mall.bean.PmsBaseAttrValue">
+        insert into pms_base_attr_value(value_name,attr_id,is_enabled) values (#{vname},#{aid},#{vis})
+    </insert>
+
+    <update id="update" parameterType="com.kq.mall.bean.PmsBaseAttrValue">
+        update pms_base_attr_value
+        <set>
+            <if test="vname != null">value_name=#{vname}</if>
+            <if test="vis != null">is_enabled=#{vis}</if>
+        </set>
+        where id=#{vid}
+    </update>
+    <delete id="delete" parameterType="com.kq.mall.bean.PmsBaseAttrValue">
+        delete from pms_base_attr_value where id=#{id}
+    </delete>
+
+    <select id="selectById" resultType="com.kq.mall.bean.PmsBaseAttrValue">
+        select p.*  from pms_base_attr_value p where p.attr_id = #{id}
+    </select>
+    <select id="findExistValue" resultType="com.kq.mall.bean.PmsBaseAttrValue">
+        select * from pms_base_attr_value where attr_id = #{id}
+    </select>
+
+</mapper>

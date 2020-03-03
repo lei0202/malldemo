@@ -6,18 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mall-user-service" />
         <module name="mall-api" />
+        <module name="mall-user" />
         <module name="mall-common-util" />
         <module name="mall-user-web" />
+        <module name="mall-manage-service" />
+        <module name="mall-manage-web" />
         <module name="mall-web-util" />
-        <module name="mall-user" />
+        <module name="mall-user-service" />
         <module name="mall-service-util" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="mall-api" target="1.8" />
       <module name="mall-common-util" target="1.8" />
+      <module name="mall-manage-service" target="1.8" />
+      <module name="mall-manage-web" target="1.8" />
       <module name="mall-parent" target="1.8" />
       <module name="mall-service-util" target="1.8" />
       <module name="mall-user" target="1.8" />
@@ -30,6 +34,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mall-api" options="-parameters" />
       <module name="mall-common-util" options="-parameters" />
+      <module name="mall-manage-service" options="-parameters" />
+      <module name="mall-manage-web" options="-parameters" />
       <module name="mall-service-util" options="-parameters" />
       <module name="mall-user" options="-parameters" />
       <module name="mall-user-service" options="-parameters" />

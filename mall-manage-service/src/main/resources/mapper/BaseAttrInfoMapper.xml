@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kq.mall.manage.mapper.PmsBaseAttrInfoMapper">
+
+
+    <insert id="saveIfNotExist" parameterType="com.kq.mall.bean.PmsBaseAttrInfo" useGeneratedKeys="true" keyProperty="id"  keyColumn="id">
+        insert into pms_base_attr_info(attr_name,catalog3_id,is_enabled) values (#{attrName},#{catalog3Id},#{isEnabled})
+    </insert>
+
+<!--    <update id="update" parameterType="com.kq.mall.bean.PmsBaseAttrInfo">-->
+<!--        update pms_base_attr_info-->
+<!--        <set>-->
+<!--            <if test="attrName != null">attr_name=#{attrName}</if>-->
+<!--            <if test="catalog3Id != null">catalog3_id=#{catalog3Id}</if>-->
+<!--            <if test="isEnabled != null">is_enabled=#{isEnabled}</if>-->
+<!--        </set>-->
+<!--        where id=#{id}-->
+<!--    </update>-->
+
+    <select id="selectById" resultType="com.kq.mall.bean.PmsBaseAttrInfo">
+        select p.*  from pms_base_attr_info p where p.catalog3_id = #{id}
+    </select>
+
+</mapper>
